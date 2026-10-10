@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleo - Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <h2>Empleo</h2>
+    <a href="index.html">Home</a>
+</header>
+
+<main class="builder-container">
+
+    <section class="form-section">
+
+        <h1>Build Your Resume</h1>
+        <p class="subtitle">
+            Fill in your details below.
+        </p>
+
+        <form id="resumeForm">
+
+            <h2>Personal Information</h2>
+
+            <input type="text" id="name" placeholder="Full Name" required>
+
+            <input type="email" id="email" placeholder="Email" required>
+
+            <input type="text" id="phone" placeholder="Phone Number">
+
+            <input type="text" id="location" placeholder="Location">
+
+            <input type="text" id="linkedin" placeholder="LinkedIn URL">
+
+            <input type="text" id="github" placeholder="GitHub URL">
+
+            <h2>Professional Summary</h2>
+
+            <textarea id="summary"
+                placeholder="Write a short professional summary"></textarea>
+
+            <h2>Education</h2>
+
+            <textarea id="education"
+                placeholder="Example: B.E Computer Science - Easwari Engineering College - 2027 - CGPA 8.5"></textarea>
+
+            <h2>Skills</h2>
+
+            <textarea id="skills"
+                placeholder="Example: Java, HTML, CSS, JavaScript, MySQL"></textarea>
+
+            <h2>Projects</h2>
+
+            <textarea id="projects"
+                placeholder="Project name, technologies used and short description"></textarea>
+
+            <h2>Experience</h2>
+
+            <textarea id="experience"
+                placeholder="Company, role, duration and responsibilities"></textarea>
+
+            <h2>Certifications</h2>
+
+            <textarea id="certifications"
+                placeholder="List your certifications"></textarea>
+
+            <h2>Achievements</h2>
+
+            <textarea id="achievements"
+                placeholder="List your achievements"></textarea>
+
+            <div class="button-group">
+
+                <button type="button" onclick="saveResume()">
+                    Save Resume
+                </button>
+
+                <button type="button" onclick="openPreview()">
+                    Preview Resume
+                </button>
+
+            </div>
+
+            <p id="message"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
